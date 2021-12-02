@@ -1,0 +1,33 @@
+.google-map {
+	height: 250px;
+	width: 100%;
+}
+
+.google-map img {
+	margin-top: 0;
+	vertical-align: top;
+}
+
+h2 + .google-map {
+	margin-top: 50px;
+}
+
+@media (min-width: 992px) {
+	.google-map {
+		height: 570px;
+	}
+}
+
+@media (min-width: 1600px) {
+	h2 + .google-map {
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 500px) {
+	iframe{
+		width: 320px;
+		height: 250px;
+	}
+}
+/*# sourceMappingURL=google-map.css.map */

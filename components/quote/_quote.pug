@@ -1,0 +1,13 @@
+//- Quote simple
+	@param {object} obj - data object
+	@param {string} obj.text - text
+	@param {string} obj.name - name of author
+mixin quote-simple( obj )
+	// Quote simple
+	.quote.quote-simple&attributes( attributes )
+		.quote-text
+			q= obj.text
+		.quote-author.h6
+			- if( obj.authorImg )
+				+img(obj.authorImg)
+			p= '-' + obj.name

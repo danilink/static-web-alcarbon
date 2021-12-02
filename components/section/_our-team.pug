@@ -1,0 +1,25 @@
+include ../person/_person
+
+// Our team
+section.section.section-md.bg-100.novi-background( data-preset!={ title:'Our Team', category:'person, isotope', reload:true, id:'our-team-2' } )
+	.container.text-center
+		h2 Our Team
+		.row.row-40
+			.col-sm-6.col-lg-4
+				+person-classic({
+					img: 'team-1-370x428',
+					name: 'Jerry Parker',
+					subtitle: 'Kitchen Manager'
+				})
+			.col-sm-6.col-lg-4
+				+person-classic({
+					img: 'team-2-370x428',
+					name: 'Caroline smith',
+					subtitle: 'Prep Cook'
+				})
+			.col-sm-6.col-lg-4
+				+person-classic({
+					img: 'team-3-370x428',
+					name: 'Tina Robinson',
+					subtitle: 'Cashier'
+				}) 

@@ -1,0 +1,97 @@
+.accent-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2.5rem 1.25rem;
+	background-image: url("../../images/bg-pattern-1.png");
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+.accent-box h4 + h2 {
+	margin-top: 10px;
+}
+
+.accent-box h2 + p {
+	margin-top: 25px;
+}
+
+.accent-box * + .link {
+	margin-top: 25px;
+}
+
+.accent-box p {
+	line-height: 1.75rem;
+}
+
+* + .accent-box {
+	margin-top: 2.5rem;
+}
+
+* + .accent-box-text {
+	margin-top: 1.75rem;
+}
+
+* + .accent-box-form {
+	margin-top: 1.875rem;
+}
+
+* + .accent-box-btn {
+	margin-top: 2.5rem;
+}
+
+.accent-box-text + .accent-box-form,
+.accent-box-btn + .accent-box-text {
+	margin-top: 2.5rem;
+}
+
+.accent-box-primary {
+	background-color: #b90809;
+}
+
+.accent-box-secondary {
+	background-color: #ffa900;
+}
+
+.accent-box-success {
+	background-color: #77ba21;
+}
+
+.accent-box-info {
+	background-color: #138ce4;
+}
+
+.accent-box-warning {
+	background-color: #fdb913;
+}
+
+.accent-box-danger {
+	background-color: #e72660;
+}
+
+.accent-box-light {
+	background-color: #f2ebe6;
+}
+
+.accent-box-dark {
+	background-color: #1c1b1b;
+}
+
+@media (min-width: 768px) {
+	.accent-box {
+		padding: 3.125rem 1.25rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.accent-box {
+		padding: 3.75rem 1.875rem;
+	}
+	.accent-box h2 + p, .accent-box * + .link {
+		margin-top: 40px;
+	}
+}
+/*# sourceMappingURL=accent-box.css.map */

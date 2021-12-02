@@ -1,0 +1,14 @@
+//- Offer box image right
+	@param {object} data - offer-box data object
+	@param {string} data.title - offer-box title
+	@param {string} data.text - offer-box description
+	@param {string} data.link - offer-box link
+	@param {string} data.btnText - offer-box button text
+mixin offer-box-image-right( data )
+	// Offer box image right
+	.offer-box.offer-box-image-right&attributes( attributes )
+		.offer-box-image
+			.offer-box-image-inner( style='background-image: url("images/'+ data.img +'.jpg")' )
+		
+		.offer-box-text= data.text
+		a.link( href= data.link ? data.link : '#' )= data.btnText ? data.btnText : 'Read more'

@@ -1,0 +1,23 @@
+include ../offer-box/_offer-box
+
+// Home About
+section.section.section-md.bg-white
+	.container
+		.row.row-50.justify-content-between
+			.col-lg-6
+				.text-box-decorate
+					.decorate-text.text-100 grill
+						br
+						| party
+					h3.text-warning Menú Diario
+					h2 The perfect place
+						br 
+						| to enjoy the life and food
+				+img( 'home-2-570x458' ).position-relative
+			.col-lg-6.col-xl-5
+				+offer-box-image-right({
+					img: 'home-3-847x686',
+					text: 'Gran variedad en desayunos al estilo ecuatoriano. Bolones de verde, Humitas, Empanadas, Bollos de pescado y mucho más... ',
+					link: 'about-us.html',
+					btnText: 'More about us'
+				})

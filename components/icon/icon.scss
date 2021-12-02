@@ -1,0 +1,72 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+
+// Variables
+$icon-size: (
+	( 'xs', 70px, 18px ),
+	( 'sm', 84px, 24px ),
+	( 'md', 96px, 36px ),
+	( 'lg', 108px, 48px ),
+	( 'xl', 124px, 64px )
+);
+
+
+// Base
+.icon {
+	font-weight: 400;
+}
+
+a.icon,
+button.icon {
+	transition: .25s;
+}
+
+
+// Modifiers
+.icon-rect,
+.icon-round,
+.icon-circle {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	vertical-align: middle;
+	border: 2px solid ;
+}
+
+.icon-round {
+	border-radius: $border-radius;
+}
+
+.icon-circle {
+	border-radius: 50%;
+}
+
+.icon-question {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 2em;
+	height: 2em;
+	font-size: 1.5em;
+	border-radius: 50%;
+	border: 2px solid;
+}
+
+.icon-secondary {
+	color: $secondary;
+	border-color: $secondary;
+	
+	&:hover {
+		color: $white;
+		border-color: $secondary;
+		background-color: $secondary;
+	}
+}

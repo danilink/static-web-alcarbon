@@ -1,0 +1,22 @@
+include ../quote/_quote
+// home testimonials
+section.section.section-with-right-offset.section-lg.context-dark
+	.bg-image.overlay-black( style='background-image: url("images/testimonials-bg.jpg");' )
+	.container
+		h2.section-title-with-img
+			+img( 'quote-icon.png' ).mr-3
+			| OPINIONES
+		// Owl Carousel
+		.owl-carousel.owl-carousel-dots-right( data-owl={ dots: true })
+			+quote-simple({
+				text: 'As a Southerner and a barbecue aficionado, I was delighted to stumble upon a real, honest to goodness Southern barbecue joint. The atmosphere is right just as the menu.',
+				name: 'Emma Richards'
+			})
+			+quote-simple({
+				text: 'We got catering from here for our wedding. The food was delicious! We did chicken, pulled pork, and brisket - all wonderful -- with Mac and cheese and Cole slaw and salad.',
+				name: 'peter wilson'
+			})
+			+quote-simple({
+				text: 'We were at GrillParty a few weeks ago with some clients from Texas. I am finally getting back to tell you that we had a wonderful evening! The food, the service, all of it was perfect!',
+				name: 'Larry Adams'
+			})

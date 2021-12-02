@@ -1,0 +1,50 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins";
+@import "../bootstrap/scss/badge";
+
+
+// Base
+.badge {
+	vertical-align: middle;
+	box-shadow: none;
+	font-family: $font-family-sec-2;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	line-height: 11px;
+	padding-bottom: 4px;
+	
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.badge-wrap {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2px;
+	line-height: 0;
+	bottom: .5em;
+}
+
+
+// Modifying
+.badge-square {
+	border-radius: 0;
+}
+
+.badge-circle {
+	border-radius: 10em;
+}
+
+
+// Contexts
+.rd-navbar {
+	.badge {
+		box-shadow: none;
+	}
+}

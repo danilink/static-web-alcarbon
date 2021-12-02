@@ -1,0 +1,13 @@
+//- Blurb Creative
+	@param {object} data - data object
+	@param {string} data.class - icon class
+	@param {string} data.title - icon title
+mixin blurb-creative( data )
+	// Icon box Classic
+	.blurb.blurb-creative&attributes( attributes )
+		if ( data.imgIcon )
+			+img( data.imgIcon ).blurb-creative-icon
+		else
+			.blurb-creative-icon.novi-icon( class= data.class )
+		h6.blurb-creative-title= data.title
+		block

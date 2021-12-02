@@ -1,0 +1,21 @@
+// service reservation
+section.section-md.bg-primary.bg-image.context-dark( style='background-image: url("images/bg-pattern-2.png")' )
+	.container.text-center
+		.row.row-30.justify-content-center
+			.col-md-10.col-lg-9.col-xl-8
+				h3.text-warning Reservation
+				h2.mt-2 Let's Get This Party Started
+			.col-md-9.col-lg-7.col-xl-5
+				// RD Mailform
+				form.rd-mailform.text-left.row.row-10(data-form-output="form-output-global", data-form-type='contact', method='post', action='components/rd-mailform/rd-mailform.php')
+					.col-12
+						.form-group
+							input#contact-name.form-control(type="text" name="name" data-constraints='@Required', placeholder='Name')
+					.col-12
+						.form-group
+							input.form-control( id='input-tel', type='tel', name='tel', placeholder='Phone', data-constraints='@PhoneNumber @Required' )
+					.col-12
+						.form-group
+							input#contact-email.form-control(type="email" name="email" data-constraints="@Email @Required", placeholder='Email')
+					.col-md-12.text-center
+						button.btn.btn-secondary(type="submit") submit

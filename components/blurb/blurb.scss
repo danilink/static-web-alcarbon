@@ -1,0 +1,66 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins";
+
+
+// Base
+.blurb {
+
+	.blurb-header > * {
+		margin-top: 0;
+	}
+}
+
+// blurb creative
+.blurb-creative {
+	position: relative;
+	display: inline-block;
+	padding: 15px;
+
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+	
+	a {
+		color: inherit;
+		&:hover {
+			color: $secondary;
+		}
+	}
+	
+	p {
+		line-height: px-to-rem( 22px );
+	}
+}
+.blurb-creative-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: px-to-rem( 90px );
+	transform: translate( -50%, -50% );
+	color: rgba( $gray-800, .15 );
+}
+
+* + .blurb-creative-title {
+	margin-top: 0;
+}
+.blurb-creative-title {
+	font-weight: 600;
+}
+.blurb-creative-title + * {
+	margin-top: 12px;
+}
+
+// context
+.context-dark {
+	.blurb-creative {
+		a:hover {
+			color: $secondary;
+			text-decoration: none;
+		}
+	}
+}

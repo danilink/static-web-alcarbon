@@ -1,0 +1,27 @@
+// reservation 2
+section.section-md.bg-primary.bg-image.context-dark( style='background-image: url("images/bg-pattern-2.png")' )
+	.container.text-center
+		.row.row-30.justify-content-center
+			.col-md-10.col-lg-9.col-xl-8
+				h3.text-warning Table Reservation
+				h2.mt-2 Make Online Reservation
+				p.mt-5 Booking a table online is easy and takes just a couple of minutes. You can call us, e-mail or book using this form. Whatever suits you best.
+			.col-md-11
+				// RD Mailform
+				form.rd-mailform.text-left.row.row-10.gutters-10(data-form-output="form-output-global", data-form-type='contact', method='post', action='components/rd-mailform/rd-mailform.php')
+					.col-md-6
+						.form-group.form-group-sm
+							input#contact-name.form-control(type="text" name="name" data-constraints='@Required', placeholder=' Enter Your Name')
+						.form-group.form-group-sm
+							input.form-control( id='input-tel', type='tel', name='tel', placeholder='Phone Number', data-constraints='@PhoneNumber @Required' )
+						.form-group.form-group-sm
+							input#contact-email.form-control(type="email" name="email" data-constraints="@Email @Required", placeholder='Email')
+					.col-md-6
+						.form-group.form-group-sm
+							.datetimepicker-group
+								input.form-control( id='sample-date', type='text', name='sample-date', placeholder='Date And Time', data-datetimepicker!={ format: 'L' } )
+						.form-group.form-group-sm
+							textarea#contact-message.form-control(name="message" data-constraints="@Required", placeholder='Enter Your Notes' style='min-height: 123px')
+
+					.col-md-12.text-center
+						button.btn.btn-secondary(type="submit") submit

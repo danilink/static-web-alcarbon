@@ -1,0 +1,43 @@
+include ../post/_post
+// Home News
+section.section-md.bg-transparent
+	.container
+		.row.row-60
+			.col-12
+				.row.row-20.align-items-end
+					.col-md-7
+						h3.text-warning What’s New?
+						h2.mt-0 Our news & articles
+					.col-md-5.text-md-right
+						a.btn.btn-lg.btn-primary( href='#' ) view more news
+			.col-12
+				.row.row-30
+					.col-md-6
+						+img( 'home-5-570x457' )
+					.col-md-6
+						.accent-box.bg-100( style='background-image: url("images/accent-box-bg-1.png");' )
+							+post-minimal({
+								author: 'Peter Wilson',
+								date: 'JANUARY 22, 2020',
+								title: 'TONIGHT\'S SPECIALS! FRESH FLAVORS OF THE SEASON'
+							})
+			.col-12
+				.row.row-30
+					.col-md-6.col-lg-4
+						+post-classic({
+							img: 'home-6-141x113',
+							date: 'JANUARY 22, 2020',
+							title: 'Every Tuesday, Choose 3 Courses Starting at $15.9'
+						})
+					.col-md-6.col-lg-4
+						+post-classic({
+							img: 'home-7-141x113',
+							date: 'February 19, 2020',
+							title: 'Join us every Monday and enjoy hand - crafted martinis'
+						})
+					.col-md-6.col-lg-4
+						+post-classic({
+							img: 'home-8-141x113',
+							date: 'February 21, 2020',
+							title: 'JOB POSITION: BARISTA WANTED'
+						})

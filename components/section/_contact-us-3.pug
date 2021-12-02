@@ -1,0 +1,41 @@
+include ../blurb/_blurb
+
+// Contact us
+section.section.section-sm.bg-primary.novi-background.context-dark( data-preset!={ title:'Contact Us', category:'contacts', reload:false, id:'contact-us-3' } )
+	.container.text-center
+		.row.row-40
+			.col-sm-6.col-lg-3
+				+blurb-creative({
+					title: 'Address',
+					imgIcon: 'icon-1-103x92.png'
+				})
+					p 2605 Scheuvront Drive.
+						br
+						| New York, NY
+				
+			.col-sm-6.col-lg-3 
+				+blurb-creative({
+					title: 'Opening hours',
+					imgIcon: 'icon-2-103x103.png'
+				})
+					p Mon - Sun
+						br
+						| 8am - 9pm
+			.col-sm-6.col-lg-3
+				+blurb-creative({
+					title: 'phones',
+					imgIcon: 'icon-3-98x99.png'
+				})
+					p 
+						a( href='tel:#' ) + 166 900 891
+						br
+						a( href='tel:#' ) + 166 900 892
+			.col-sm-6.col-lg-3
+				+blurb-creative({
+					title: 'emails',
+					imgIcon: 'icon-4-103x97.png'
+				})
+					p
+						a( href='mailto:#' ) info@demolink.org
+						br
+						a( href='mailto:#' ) mail@demolink.org

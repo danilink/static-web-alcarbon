@@ -1,0 +1,18 @@
+//- Person Classic
+	@param {object} data - data object
+	@param {string} data.img - image name or path
+	@param {string} data.name - person name
+	@param {string} [data.subtitle] - person description
+mixin person-classic( data )
+	// Person classic
+	.person.person-classic&attributes( attributes )
+		.person-classic-figure
+			+img( data.img )
+			.person-classic-social-icon
+				.group-10.d-flex.justify-content-center
+					a.icon.icon-circle.icon-secondary.fa-facebook.novi-icon( href='#' )
+					a.icon.icon-circle.icon-secondary.fa-twitter.novi-icon( href='#' )
+					a.icon.icon-circle.icon-secondary.fa-instagram.novi-icon( href='#' )
+		.person-classic-body
+			h5.person-classic-title= data.name
+			p.person-classic-subtitle= data.subtitle

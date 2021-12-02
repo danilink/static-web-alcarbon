@@ -1,0 +1,7 @@
+include ../breadcrumb/_breadcrumb
+
+// section breadcrumbs
+section.breadcrumbs.breadcrumbs-section.bg-image.overlay-dark-04.context-dark( style='background-image: url( "images/breadcrumbs-bg.jpg" )' )
+	.container.text-center
+		h2.h2-small= pageName
+		+breadcrumb( breadcrumbs ).d-inline-flex.justify-content-center

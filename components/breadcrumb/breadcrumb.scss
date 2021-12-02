@@ -1,0 +1,62 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Variables
+$breadcrumb-font-size: px-to-rem( 12px );
+$breadcrumb-item-padding: 10px;
+$breadcrumb-divider: '\2022';
+$breadcrumb-divider-color: $gray-300;
+$breadcrumb-primary: $primary;
+$breadcrumb-secondary: $secondary;
+
+
+// Base
+.breadcrumb {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$breadcrumb-item-padding;
+	margin-right: -$breadcrumb-item-padding;
+	font-size: $breadcrumb-font-size;
+	line-height: px-to-rem( 14px );
+	list-style: none;
+}
+
+.breadcrumb-item {
+	font-family: $font-family-sec;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	padding: 0 $breadcrumb-item-padding;
+	
+	a:hover {
+		color: $white;
+	}
+}
+
+.breadcrumb-active {
+	color: $breadcrumb-secondary;
+}
+
+* + .breadcrumb {
+	margin-top: 15px;
+}
+
+.breadcrumb-item  + .breadcrumb-item{
+	border-left: 2px solid $breadcrumb-secondary;
+}
+
+.breadcrumbs-section {
+	padding: px-to-rem( 65px, 0, 45px );
+	@include media-breakpoint-up( xl ) {
+		padding: px-to-rem( 120px, 0, 85px );
+	}
+}
+
+// Contexts
+.context-dark {
+	
+}

@@ -1,0 +1,104 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/code";
+
+
+// Base
+.text-box {
+	* + h5 { margin-top: px-to-rem( 16px ) }
+	* + .link { margin-top: px-to-rem( 28px ) }
+	h3 + .link { margin-top: px-to-rem( 18px ) }
+}
+
+
+// Media
+@include media-breakpoint-up( xxl ) {
+	.text-box {
+		* + h5 { margin-top: px-to-rem( 36px ) }
+		* + .link { margin-top: px-to-rem( 48px ) }
+		h3 + .link { margin-top: px-to-rem( 45px ) }
+	}
+}
+
+
+// text box with decorate text
+.text-box-decorate {
+	position: relative;
+	
+	> * {
+		position: relative;
+	}
+	
+	h3 {
+		margin-top: 0;
+	}
+	
+	h3 + * {
+		margin-top: 15px;
+	}
+	
+	.decorate-text {
+		position: absolute;
+		font-weight: 700;
+		font-family: $font-family-sec;
+		text-transform: uppercase;
+		z-index: 0;
+		top: -15px;
+		left: 50px;
+		font-size: px-to-rem( 105px );
+		line-height: 1;
+	}
+	
+	@include media-breakpoint-up( xl ) {
+		padding-top: 50px;
+	}
+}
+
+.text-box-decorate + img {
+	margin-top: 35px;
+}
+
+@include media-breakpoint-up( md ) {
+	 .text-box-decorate {
+		 .decorate-text {
+			 top: -25px;
+			 left: 75px;
+			 font-size: px-to-rem( 130px ) ;
+		 }
+	 }
+}
+
+@include media-breakpoint-up( lg ) {
+	.text-box-decorate {
+		.decorate-text {
+			top: -35px;
+			left: 90px;
+			font-size: px-to-rem( 160px ) ;
+		}
+	}
+}
+
+@include media-breakpoint-up( xxl ) {
+	.text-box-decorate {
+		.decorate-text {
+			top: 0;
+			left: 140px;
+			font-size: px-to-rem( 220px ) ;
+		}
+	}
+}
+
+
+@include media-breakpoint-up( xl ) {
+	.text-box-decorate {
+		h4 + * {
+			margin-top: 20px;
+		}
+	}
+	.text-box-decorate + img {
+		margin-top: 60px;
+	}
+}

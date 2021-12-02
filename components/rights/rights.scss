@@ -1,0 +1,32 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+
+
+// Base
+.rights {
+	font-size: px-to-rem( 17px );
+	color: #818181;
+}
+
+.rights-link {
+	font-weight: 400;
+	color: inherit;
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+
+// Contexts
+.context-dark {
+	.rights-link {
+		color: $white;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}

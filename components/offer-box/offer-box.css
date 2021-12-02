@@ -1,0 +1,102 @@
+.offer-box-title {
+	color: #1c1b1b;
+}
+
+.offer-box-title a {
+	color: inherit;
+}
+
+.offer-box-title a:hover, .offer-box-title a:focus {
+	color: #b90809;
+}
+
+.offer-box-text {
+	font-size: 1rem;
+	line-height: 1.75rem;
+}
+
+* + .offer-box-title {
+	margin-top: 14px;
+}
+
+* + .offer-box-text {
+	margin-top: 6px;
+}
+
+* + .offer-box-button {
+	margin-top: 13px;
+}
+
+.context-dark .offer-box-title {
+	color: inherit;
+}
+
+@media (min-width: 992px) {
+	* + .offer-box-title {
+		margin-top: 20px;
+	}
+	* + .offer-box-text {
+		margin-top: 8px;
+	}
+	* + .offer-box-button {
+		margin-top: 22px;
+	}
+}
+
+@media (min-width: 1600px) {
+	* + .offer-box-title {
+		margin-top: 32px;
+	}
+	* + .offer-box-text {
+		margin-top: 10px;
+	}
+	* + .offer-box-button {
+		margin-top: 29px;
+	}
+}
+
+.offer-box-image-right {
+	display: inline-block;
+}
+
+.offer-box-image-right .offer-box-image {
+	position: relative;
+	min-height: 250px;
+}
+
+.offer-box-image-right .offer-box-image-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.offer-box-image-right * + .offer-box-text {
+	margin-top: 25px;
+}
+
+.offer-box-image-right * + .link {
+	margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+	.offer-box-image-right .offer-box-image {
+		min-height: 450px;
+	}
+	.offer-box-image-right .offer-box-image .offer-box-image-inner {
+		width: 50vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.offer-box-image-right .offer-box-image {
+		min-height: 650px;
+	}
+	.offer-box-image-right * + .offer-box-text {
+		margin-top: 35px;
+	}
+}
+/*# sourceMappingURL=offer-box.css.map */

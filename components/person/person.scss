@@ -1,0 +1,84 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins";
+
+
+// Variables
+$person-primary: $primary;
+$person-secondary: $secondary;
+$person-dark: $gray-900;
+$person-title-fsz: $h4-font-size;
+$person-icon-fsz: $person-title-fsz;
+
+
+// Base
+.person {
+	max-width: 330px;
+	display: inline-block;
+	text-align: left;
+}
+
+// person classic
+.person-classic {
+	max-width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.person-classic-figure {
+	position: relative;
+	background: $primary;
+	
+	img {
+		transition: ease-in-out .3s;
+	}
+	
+	&:hover {
+		img {
+			opacity: .1;
+		}
+
+		.person-classic-social-icon {
+			opacity: 1;
+			visibility: visible;
+			transform: translate( -50%, 0 );
+		}
+	}
+}
+
+.person-classic-social-icon {
+	position: absolute;
+	top: calc( 50% - 22px );
+	left: 50%;
+	transform: translate( -50%, 100px );
+	opacity: 0;
+	visibility: hidden;
+	transition: ease-in-out .3s;
+
+	.icon-secondary {
+		&:hover {
+			background: $secondary;
+			color: $white;
+			border-color: $secondary;
+		}
+	}
+}
+
+.person-classic-body {
+	padding: 30px 20px 0;
+	text-align: center;
+}
+.person-classic-subtitle {
+	font-family: $font-family-sec;
+	font-size: px-to-rem( 12px );
+	font-weight: 500;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	color: $primary;
+}
+
+* + .person-classic-subtitle {
+	margin-top: 10px;
+}

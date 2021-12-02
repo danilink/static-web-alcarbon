@@ -1,0 +1,52 @@
+// Classic
+.offer-box-image-right {
+	display: inline-block;
+
+	.offer-box-image {
+		position: relative;
+		min-height: 250px;
+	}
+
+	.offer-box-image-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	* + .offer-box-text {
+		margin-top: 25px;
+	}
+	
+	* + .link {
+		margin-top: 15px;
+	}
+}
+
+@include  media-breakpoint-up( lg ) {
+	.offer-box-image-right {
+		.offer-box-image {
+			min-height: 450px;
+
+			.offer-box-image-inner {
+				width: 50vw;
+			}
+		}
+	}
+}
+
+
+@include  media-breakpoint-up( xl ) {
+	.offer-box-image-right {
+		.offer-box-image {
+			min-height: 650px;
+		}
+
+		* + .offer-box-text {
+			margin-top: 35px;
+		}
+	}
+}

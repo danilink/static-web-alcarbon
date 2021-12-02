@@ -1,0 +1,91 @@
+.progress-linear {
+	position: relative;
+	text-align: left;
+}
+
+.progress-linear-inner {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -6px;
+}
+
+.progress-linear-inner > * {
+	margin-bottom: 6px;
+}
+
+.progress-linear-title,
+.progress-linear-counter-wrap {
+	font-family: "Oswald", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #1c1b1b;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.progress-linear-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.progress-linear-counter-wrap.hidden {
+	display: none;
+}
+
+.progress-linear-body {
+	height: 6px;
+	background: #f2ebe6;
+}
+
+.progress-linear-bar {
+	width: 0;
+	height: inherit;
+	background: #b90809;
+	transition: 1s all ease-in-out;
+}
+
+.progress-linear + .progress-linear {
+	margin-top: 20px;
+}
+
+.progress-linear-reverse .progress-linear-inner {
+	flex-direction: column-reverse;
+}
+
+.progress-linear-creative .progress-linear-body {
+	display: flex;
+	align-items: center;
+}
+
+.progress-linear-creative .progress-linear-counter-wrap {
+	margin-left: 10px;
+}
+
+.progress-linear-shamrock-blue .progress-linear-bar {
+	background: linear-gradient(45deg, #43DD93 0%, #28A8FF 100%);
+}
+
+.progress-linear-blue-violet .progress-linear-bar {
+	background: linear-gradient(46.03deg, #28A8FF -1.86%, #7D2EFF 100%);
+}
+
+.progress-linear-electric-violet .progress-linear-bar {
+	background: linear-gradient(225deg, #C728FF 0%, #7D2EFF 100%);
+}
+
+.progress-linear-dark-violet .progress-linear-bar {
+	background: linear-gradient(-8.15deg, #ffa900 4.67%, #1c1b1b 49.99%);
+}
+
+.context-dark .progress-linear-title,
+.context-dark .progress-linear-counter-wrap {
+	color: #fff;
+}
+
+@media (min-width: 992px) {
+	.progress-linear + .progress-linear {
+		margin-top: 1.875rem;
+	}
+}
+/*# sourceMappingURL=progress-linear.css.map */

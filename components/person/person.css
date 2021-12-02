@@ -1,0 +1,65 @@
+.person {
+	max-width: 330px;
+	display: inline-block;
+	text-align: left;
+}
+
+.person-classic {
+	max-width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.person-classic-figure {
+	position: relative;
+	background: #b90809;
+}
+
+.person-classic-figure img {
+	transition: ease-in-out .3s;
+}
+
+.person-classic-figure:hover img {
+	opacity: .1;
+}
+
+.person-classic-figure:hover .person-classic-social-icon {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
+}
+
+.person-classic-social-icon {
+	position: absolute;
+	top: calc( 50% - 22px);
+	left: 50%;
+	transform: translate(-50%, 100px);
+	opacity: 0;
+	visibility: hidden;
+	transition: ease-in-out .3s;
+}
+
+.person-classic-social-icon .icon-secondary:hover {
+	background: #ffa900;
+	color: #fff;
+	border-color: #ffa900;
+}
+
+.person-classic-body {
+	padding: 30px 20px 0;
+	text-align: center;
+}
+
+.person-classic-subtitle {
+	font-family: "Oswald", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	color: #b90809;
+}
+
+* + .person-classic-subtitle {
+	margin-top: 10px;
+}
+/*# sourceMappingURL=person.css.map */

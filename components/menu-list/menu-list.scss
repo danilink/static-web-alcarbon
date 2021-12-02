@@ -1,0 +1,63 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+// menu list
+.menu-list {
+
+}
+.menu-list-title {
+	color: $warning;
+	font-weight: 400;
+	font-family: $font-family-cursive;
+	text-transform: none;
+}
+.menu-list-item-title {
+	padding-right: 15px;
+}
+.menu-price {
+	position: relative;
+	margin-top: 0;
+	font-family: $font-family-cursive;
+	color: $primary;
+	font-weight: 400;
+	line-height: 1;
+	flex: 1;
+	text-align: right;
+	
+	&:before {
+		position: absolute;
+		content: '';
+		left: 0;
+		bottom: 1px;
+		height: 2px;
+		width: calc( 100% - 35px );
+		background: $gray-200;
+		
+		@include media-breakpoint-up( lg ) {
+			bottom: 5px;
+		}
+		
+		@include media-breakpoint-up( xl ) {
+			width: calc( 100% - 60px );
+			bottom: 7px;
+		}
+	}
+}
+
+.menu-list-title + * {
+	margin-top: 12px;
+}
+
+.menu-list-item + .menu-list-item {
+	margin-top: 12px;
+}
+
+@include media-breakpoint-up( lg ) {
+	.menu-list-item + .menu-list-item {
+		margin-top: 22px;
+	}
+}

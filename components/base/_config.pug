@@ -1,0 +1,72 @@
+-
+	var
+		logo = {
+			default: 'logo-default-163x82.png',
+			inverse: 'logo-default-163x82.png',
+			name: 'GrillParty'
+		},
+
+		buyLink = 'https://www.templatemonster.com/intense-multipurpose-html-template.html',
+
+		menu = {
+			type: 'root',
+			child: [
+				{
+					title: 'Home',
+					link: 'index.html',
+					home: true
+				},
+
+				{
+					title: 'Pages',
+					link: '#',
+					child: {
+						type: 'dropdown',
+						child: [
+							{
+								title: 'About Us'
+							},
+							{
+								title: 'Our Team'
+							},
+							{
+								title: 'Team Member'
+							},
+							{
+								title: 'Services'
+							},
+							{
+								title: 'Single Service'
+							},
+							{
+								title: 'Testimonials'
+							},
+							{
+								title: 'Privacy Policy'
+							},
+							{
+								title: '404 Page'
+							}
+						]
+					}
+				},
+
+				{
+					title: 'Menu'
+				},
+				{
+					title: 'Reservation'
+				},
+				{
+					title: 'Contacts'
+				}
+			]
+		},
+
+		homePage,
+		pageName,
+		pageId,
+		pageClass,
+		pageImage,
+		htmlClass,
+		breadcrumbs = [];

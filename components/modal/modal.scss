@@ -1,0 +1,47 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/modal";
+
+//base
+.modal {
+
+	.close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		color: $secondary;
+		font-size: 20px;
+		line-height: 1;
+		transition:  ease-in-out .2s;
+		&:hover {
+			color: $dark;
+		}
+	}
+}
+
+.modal-content {
+	background-image: url("../../images/bg-pattern-1.png");
+	background-color: $primary;
+	border: 7px solid $secondary;
+	border-radius: 4px;
+}
+
+@include media-breakpoint-up( lg ) {
+	.modal-dialog {
+		max-width: 790px;
+	}
+
+	.modal-content {
+		border: 12px solid $secondary;
+	}
+	
+	.modal {
+		.close {
+			font-size: 29px;
+		}
+	}
+}

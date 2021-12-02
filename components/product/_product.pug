@@ -1,0 +1,20 @@
+//- Product
+	@param {object} obj - data object
+	@param {string} obj.img - image name or path
+	@param {string} obj.title - name of product
+	@param {string} obj.price - price of product
+	@param {string} obj.priceOld - old price of product
+	@param {boolean} obj.productNew - badge new of product
+mixin product( obj )
+	// Product
+	article.product&attributes( attributes )
+		.product-figure
+			a( href='#' )
+				+img( obj.img ).product-image
+			a.badge.badge-secondary( href='#' )= obj.badge 
+		.product-body
+			.product-title.h5
+				a( href='#' )= obj.title
+			p.product-text= obj.text
+			.product-price
+				span= '$' + obj.price

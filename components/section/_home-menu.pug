@@ -1,0 +1,32 @@
+include ../product/_product
+
+// Home Menu
+section.section.section-md.bg-transparent
+	.container
+		.row.row-50
+			.col-xs-6.col-lg-4
+				+product({
+					img: 'product-1-169x169',
+					badge: 'STARTERS',
+					title: 'MUSHROOM & ONION QUESADILLA',
+					text: 'Mote con chicharrón, patacones, choclo con queso, yuca frita...',
+					price: '16'
+				})
+			.col-xs-6.col-lg-4
+				+product({
+					img: 'product-2-169x169',
+					badge: 'meat & fish',
+					title: 'Parilladas, Platos tradicionales, Mariscos',
+					text: 'Carnes al carbón, Tripitas asadas, Hornado, Fritada, Ceviches, Encebollado...',
+					price: '25'
+				})
+			.col-xs-6.col-lg-4
+				+product({
+					img: 'product-3-169x169',
+					badge: 'SALADS & SOUP',
+					title: 'Desayunos típicos de Ecuador',
+					text: 'Gran variedad en desayunos al estilo ecuatoriano. Bolones de verde, Humitas, Empanadas, Bollos de pescado y mucho más... ',
+					price: '12'
+				})
+			.col-12.text-center
+				a.btn.btn-lg.btn-secondary( href='menu.html' ) ver carta

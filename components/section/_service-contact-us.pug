@@ -1,0 +1,20 @@
+// service contact us
+section.section-md.bg-primary.bg-image.context-dark( style='background-image: url("images/bg-pattern-2.png")' )
+	.container.text-center
+		.row.justify-content-center
+			.col-lg-10
+				h3.text-warning Have Any Questions?
+				h2.mt-1 Let’s Get in Touch 
+				// RD Mailform
+				form.rd-mailform.text-left.row.row-15.gutters-16(data-form-output="form-output-global", data-form-type='contact', method='post', action='components/rd-mailform/rd-mailform.php')
+					.col-md-6
+						.form-group
+							input#contact-name.form-control(type="text" name="name" data-constraints='@Required', placeholder='Name')
+					.col-md-6
+						.form-group
+							input#contact-email.form-control(type="email" name="email" data-constraints="@Email @Required", placeholder='Email')
+					.col-md-12
+						.form-group
+							textarea#contact-message.form-control(name="message" data-constraints="@Required", placeholder='Message' style='min-height: 120px')
+					.col-md-12.text-center
+						button.btn.btn-secondary(type="submit") Send a message

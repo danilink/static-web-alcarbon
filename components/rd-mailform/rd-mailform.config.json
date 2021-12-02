@@ -1,0 +1,8 @@
+{
+  "useSmtp": false,
+  "host": "smtp.ionos.es",
+  "port": 587,
+  "username": "info@restaurantealcarbon.es",
+  "password": "Infoalcarbon10.",
+  "recipientEmail": "info@restaurantealcarbon.es"
+}

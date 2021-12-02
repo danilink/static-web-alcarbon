@@ -1,0 +1,13 @@
+extends ../components/base/_skeleton
+include ../components/rd-navbar/_rd-navbar
+
+block variables
+	- pageName = 'Team Member';
+
+block page
+	+rd-navbar
+
+	include ../components/section/_section-breadcrumbs
+	include ../components/section/_team-member
+	include ../components/section/_team-member-skills
+	include ../components/footer/_footer-default

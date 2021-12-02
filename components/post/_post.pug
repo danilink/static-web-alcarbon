@@ -1,0 +1,26 @@
+//- Post minimal
+	@param {object} data - thumbnail data object
+	@param {string} data.title - post title
+	@param {string} data.autor - post author
+	@param {string} data.date - post publication date
+mixin post-minimal( data )
+	.post.post-minimal
+		ul.post-minimal-meta
+			li by 
+				a( href='#' )= data.author
+			li: a( href='#' )= data.date
+		h4.post-minimal-title: a( href='#' )= data.title
+		a.link( href='#' ) Read more
+
+//- Post classic
+	@param {object} data - thumbnail data object
+	@param {string} data.title - post title
+	@param {string} data.date - post publication date
+mixin post-classic( data )
+	.post.post-classic.media.align-items-center.align-items-xl-start
+		.post-classic-img
+			a( href='#' )
+				+img( data.img )
+		.post-classic-body.media-body
+			.post-classic-date= data.date
+			h5.post-classic-title: a(href='#')= data.title

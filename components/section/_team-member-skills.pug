@@ -1,0 +1,31 @@
+include ../progress-linear/_progress-liear
+// team member skills
+section.section.section-md.bg-100
+	.container.text-center
+		h2.text-center John’s skills
+		.row.row-50
+			.col-lg-6
+				+progress-linear({
+					title: 'Italian cuisine',
+					value: '95'
+				})
+				+progress-linear({
+					title: 'mexican cuisine',
+					value: '82'
+				})
+				+progress-linear({
+					title: 'French cuisine',
+					value: '98'
+				})
+				+progress-linear({
+					title: 'Japanese cuisine',
+					value: '87'
+				})
+				+progress-linear({
+					title: 'Chinese cuisine',
+					value: '87'
+				})
+			.col-lg-6
+				.thumbnail-video( data-lightgallery )
+					+img( 'team-member-2-570x320' )
+					a.thumbnail-video-btn.mdi-play.lightgallery-item( href='https://www.youtube.com/embed/GITCIx4GCS8' )

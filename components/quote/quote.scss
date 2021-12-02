@@ -1,0 +1,102 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+
+// Base
+.quote-body {
+	
+}
+
+.quote-text {
+	font-family: $font-family-cursive;
+	font-size: px-to-rem( 24px );
+	line-height: 1.25;
+	color: $gray-900;
+	
+	q {
+		&:before {
+			content: '“';
+		}
+
+		&:after {
+			content: '”';
+		}
+	}
+}
+
+.quote-author {
+	color: $secondary;
+	
+	> * {
+		display: inline-block;
+	}
+	
+	* + * {
+		margin-left: 20px;
+	}
+	
+	p {
+		margin-top: 0;
+	}
+}
+
+// Spacing
+* + .quote-text {
+	margin-top: px-to-rem(25px);
+}
+
+* + .quote-author {
+	margin-top: px-to-rem( 20px );
+}
+
+// Contexts
+.context-dark {
+	.quote-text {
+		color: $white;
+	}
+	
+	.quote-author {
+		color: $secondary;
+	}
+}
+
+
+// Theming
+@each $color, $value in $theme-colors {
+	.quote-#{$color} {
+		.quote-body {
+			color: color-yiq($value);
+			background-color: $value;
+			border-color: transparent;
+
+			.quote-author-position {
+				color: inherit;
+			}
+		}
+
+		.rating {
+			color: color-yiq($value, $primary, $white);
+		}
+
+		.quote-text {
+			color: color-yiq($value, $headings-color, $white);
+		}
+	}
+}
+
+
+// Media
+@include media-breakpoint-up(lg) {
+	* + .quote-rating {
+		margin-top: px-to-rem( 50px );
+	}
+	
+	.quote-text {
+		max-width: 900px;
+		font-size: px-to-rem( 36px );
+	}
+}

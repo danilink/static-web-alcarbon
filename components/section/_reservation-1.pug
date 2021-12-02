@@ -1,0 +1,35 @@
+include ../blurb/_blurb
+// reservation 1
+section.section.section-md
+	.container.text-center
+		.row.row-40
+			.col-sm-6.col-lg-4
+				.bg-primary.px-3.section-sm.context-dark
+					+blurb-creative({
+						title: 'Call Us',
+						imgIcon: 'icon-3-98x99.png'
+					})
+						p
+							a( href='tel:#' ) + 166 900 891
+							br
+							a( href='tel:#' ) + 166 900 892
+
+			.col-sm-6.col-lg-4
+				.bg-secondary.px-3.section-sm.context-dark
+					+blurb-creative({
+						title: 'Visit us',
+						imgIcon: 'icon-5-103x92.png'
+					})
+						p 2605 Scheuvront Drive.
+							br
+							| New York, NY
+			.col-sm-6.col-lg-4
+				.bg-100.px-3.section-sm
+					+blurb-creative({
+						title: 'Email us',
+						imgIcon: 'icon-6-103x97.png'
+					})
+						p
+							a( href='mailto:#' ) info@demolink.org
+							br
+							a( href='mailto:#' ) mail@demolink.org

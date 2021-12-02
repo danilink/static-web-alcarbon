@@ -1,0 +1,15 @@
+extends ../components/base/_skeleton
+include ../components/rd-navbar/_rd-navbar
+
+block variables
+	- pageName = 'Single Service';
+
+block page
+	+rd-navbar
+
+	include ../components/section/_section-breadcrumbs
+	include ../components/section/_single-service-1
+	include ../components/section/_single-service-2
+	include ../components/section/_service-reservation
+	
+	include ../components/footer/_footer-default

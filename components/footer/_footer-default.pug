@@ -1,0 +1,41 @@
+include ../logo/_logo
+include ../rights/_rights
+
+// Footer event
+footer.section.footer.footer-default.bg-transparent.novi-background( data-preset!={
+	title: 'Footer Minimal',
+	category: 'footer',
+	reload: true,
+	id: 'footer-minimal'
+} )
+	.footer-default-top
+		.container
+			.row.row-30.justify-content-lg-between
+				.col-md-3.text-center.text-md-left
+					+logo
+				.col-6.col-sm-4.col-md-3.text-center.text-sm-left
+					ul.list-footer
+						li.list-item 2605 Scheuvront Drive,
+							br
+							| New York, NY 99515
+
+				.col-6.col-sm-4.col-md-2.text-center.text-sm-left
+					ul.list-footer
+						li.list-item: a.list-link( href='about-us.html' ) About us
+						li.list-item: a.list-link( href='services.html' ) Services
+						li.list-item: a.list-link( href='contacts.html' ) Contacts
+				.col-12.col-sm-4.col-lg-4.text-center.text-sm-left
+					ul.list-footer
+						li.list-item: a.list-link( href='mailto:#' ) info@demolink.org
+						li.list-item: a.list-link( href='tel:#' ) + 166 900 891
+					.icon-social-list.group-10.d-flex.justify-content-center.justify-content-sm-start
+						a.icon.icon-circle.icon-secondary.fa-facebook.novi-icon( href='#' )
+						a.icon.icon-circle.icon-secondary.fa-twitter.novi-icon( href='#' )
+						a.icon.icon-circle.icon-secondary.fa-instagram.novi-icon( href='#' )
+	.container
+		.divider.divider-xl.divider-200
+	.footer-default-bottom
+		.container
+			.row
+				.col-12.text-center.text-md-left
+					+rights

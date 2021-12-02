@@ -1,0 +1,56 @@
+.link {
+	position: relative;
+	display: inline-block;
+	border: none;
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	background: none;
+	transition: .25s;
+	font-size: 0.875rem;
+	color: #1c1b1b;
+	padding-bottom: 0.5rem;
+}
+
+.link:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	bottom: 0;
+	left: 50%;
+	border-bottom: 3px solid #b90809;
+	transform: translateX(-50%);
+	transition: ease-in-out .2s;
+}
+
+.link:hover {
+	color: #1c1b1b;
+}
+
+.link:hover:before {
+	width: 80%;
+	border-color: #ffa900;
+}
+
+.link-icon {
+	vertical-align: middle;
+	padding-left: .6em;
+}
+
+.context-dark .link {
+	color: #fff;
+}
+
+.context-dark .link:before {
+	border-color: #ffa900;
+}
+
+.context-dark .link:hover {
+	color: #fff;
+}
+
+.context-dark .link:hover:before {
+	border-color: #1c1b1b;
+}
+/*# sourceMappingURL=link.css.map */

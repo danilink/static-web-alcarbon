@@ -1,0 +1,83 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+
+// Base
+.product {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: $font-size-sm;
+}
+.product-figure {
+	position: relative;
+	overflow: hidden;
+	border-radius: $border-radius;
+	background: $gray-900;
+	margin-right: 25px;
+
+	.product-image {
+		transition: ease-in-out .2s;
+	}
+	
+	&:hover {
+		.product-image {
+			transform: scale( 1.05 );
+			opacity: .85;
+		}
+	}
+	
+	.badge {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		color: $white;
+		
+		&:hover {
+			background: $primary;
+		}
+	}
+}
+
+.product-text {
+	line-height: px-to-rem( 20px );
+}
+
+.product-title + * {
+	margin-top: 10px;
+}
+.product-body {
+	flex: 1;
+}
+
+* + .product-body {
+	margin-top: 15px;
+}
+
+.product-price {
+	font-family:  $font-family-cursive;
+	font-size: px-to-rem( 36px );
+	line-height: 1;
+	color: $primary;
+}
+
+* + .product-price {
+	margin-top: 15px;
+}
+
+@include media-breakpoint-up( xl ) {
+	.product {
+		flex-direction: row;
+	}
+	
+	* + .product-body {
+		margin-top: 0;
+	}
+}

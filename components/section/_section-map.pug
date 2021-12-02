@@ -1,0 +1,16 @@
+include ../google-map/_google-map
+
+// section map
+section.section.section-md
+	.container
+		+google-map({
+			center: {lat: 40.715847, lng: -73.999925},
+			zoom: 12,
+			markers: {
+				'park': {
+					position: 'Columbus Park, Baxter Street, New York, United State',
+					html: 'Columbus park'
+				}
+			},
+			styles: [{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"simplified"},{"hue":"#ff0000"}]}]
+		})#map1
