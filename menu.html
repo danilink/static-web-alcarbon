@@ -21,7 +21,7 @@
     <meta property="og:url" content="http://restaurantealcarbon.es">
     <meta property="og:site_name" content="Al Carbón">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="components/base/base.css">
+    <link rel="stylesheet" href="components/base/base.css" media="all">
     <script src="components/base/core.min.js"></script>
     <script src="components/base/script.min.js"></script>
   </head>
@@ -47,8 +47,6 @@
             <div class="navbar-cell navbar-spacer"></div>
             <div class="navbar-cell navbar-sidebar">
               <ul class="navbar-navigation rd-navbar-nav">
-                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="index.html">Inicio</a>
-                </li>
                 <!--<li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">Pages</a>
                   <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                     <li class="navbar-navigation-back">
@@ -72,12 +70,6 @@
                     </li>
                   </ul>
                 </li> -->
-                <li class="navbar-navigation-root-item active"><a class="navbar-navigation-root-link" href="menu.html">Menu</a>
-                </li>
-                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="reservation.html">Galería</a>
-                </li>
-                <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="contacts.html">Contacto</a>
-                </li>
               </ul>
             </div>
             <div class="navbar-cell"> 
@@ -85,7 +77,6 @@
                 <div class="navbar-subpanel-item">
                   <button class="navbar-button navbar-info-button mdi-dots-vertical novi-icon" data-multi-switch='{"targets":".rd-navbar","scope":".rd-navbar","class":"navbar-info-active","isolate":"[data-multi-switch]"}'></button>
                   <div class="navbar-info">
-                    <div class="navbar-cell"><a class="btn btn-primary" href="tel:910725010">Llamanos</a></div>
                     <div class="navbar-cell">
                       <div class="icon-social-list group-10 d-flex"><a class="icon icon-circle icon-secondary fa-facebook novi-icon" href="https://www.facebook.com/alcarbonusera" target="_blank"></a><a class="icon icon-circle icon-secondary fa-instagram novi-icon" href="#"></a></div>
                     </div>
@@ -97,16 +88,6 @@
         </nav>
       </header>
       <!-- section breadcrumbs-->
-      <section class="breadcrumbs breadcrumbs-section bg-image overlay-dark-04 context-dark" style="background-image: url( &quot;images/breadcrumbs-bg.jpg&quot; )">
-        <div class="container text-center">
-          <h2 class="h2-small">Menu</h2>
-                <!-- Breadcrumb-->
-                <ul class="breadcrumb d-inline-flex justify-content-center">
-                  <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Inicio</a></li>
-                  <li class="breadcrumb-item"><span class="breadcrumb-text breadcrumb-active">Menu</span></li>
-                </ul>
-        </div>
-      </section>
       <!-- menu 1-->
       <!--<section class="section-md bg-transparent">
         <div class="container">
@@ -213,101 +194,6 @@
           </div>
         </div>
       </section> -->
-      <!-- menu 2-->
-      <section class="section section-md bg-transparent">
-        <div class="container">
-          <div class="row row-30">
-            <div class="col-lg-6 text-center menu-foto">
-              <!-- Owl Carousel-->
-              <div class="owl-carousel owl-carousel-dots-right" data-owl="{&quot;dots&quot;:true}">
-                  <!-- Quote simple-->
-                  <div class="quote quote-simple">
-                    <div class="quote-text">
-                        <img src="images/desayuno.jpg" alt="" width="570" height="404"/>        
-                    </div>
-                  </div>
-                  <div class="quote quote-simple">
-                    <div class="quote-text">
-                        <img src="images/bollos.jpg" alt="" width="570" height="404"/>        
-                    </div>
-                  </div>
-                  <div class="quote quote-simple">
-                      <div class="quote-text">
-                          <img src="images/quim.jpg" alt="" width="570" height="404"/>        
-                      </div>
-                    </div>
-                    <div class="quote quote-simple">
-                      <div class="quote-text">
-                          <img src="images/morada.jpg" alt="" width="570" height="404"/>        
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="menu-list pr-3">
-                <h4 class="menu-list-title">Desayunos / Meriendas</h4>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Desayuno Al carbón</h5>
-                    <h4 class="menu-price">7 €</h4>
-                  </div>
-                  <p class="small mt-0">Bolón de verde, seco de carne, huevo frito. Incluye café</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Desayuno Tradicional</h5>
-                    <h4 class="menu-price">8 €</h4>
-                  </div>
-                  <p class="small mt-0">Huevos revueltos, beacon, bastones de yuca. Incluye café</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Bollo de pescado</h5>
-                    <h4 class="menu-price">6 €</h4>
-                  </div>
-                  <p class="small mt-0">Con café. 7 €</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Café con Humita</h5>
-                    <h4 class="menu-price">4 €</h4>
-                  </div>
-                  <p class="small mt-0"></p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Café con empanadas de verde</h5>
-                    <h4 class="menu-price">4 €</h4>
-                  </div>
-                  <p class="small mt-0">carne o queso</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Café con Quimbolito</h5>
-                    <h4 class="menu-price">3,70 €</h4>
-                  </div>
-                  <p class="small mt-0"></p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Bolón de verde</h5>
-                    <h4 class="menu-price">3 €</h4>
-                  </div>
-                  <p class="small mt-0"></p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Empanada de yuca</h5>
-                    <h4 class="menu-price">3 €</h4>
-                  </div>
-                  <p class="small mt-0"></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="section">
         <div class="container">
           <div class="divider divider-xl divider-200"></div>
@@ -323,19 +209,9 @@
                   <!-- Quote simple-->
                   <div class="quote quote-simple">
                     <div class="quote-text">
-                        <img src="images/patacones.jpg" alt="" width="570" height="404"/>        
+                        <img src="images/alitasbbq.jpg" alt="" width="570" height="404"/>        
                     </div>
                   </div>
-                  <div class="quote quote-simple">
-                      <div class="quote-text">
-                          <img src="images/alitasbbq.jpg" alt="" width="570" height="404"/>        
-                      </div>
-                    </div>
-                    <div class="quote quote-simple">
-                      <div class="quote-text">
-                          <img src="images/papi-pollp.jpg" alt="" width="570" height="404"/>        
-                      </div>
-                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -343,172 +219,97 @@
                 <h4 class="menu-list-title">Para picar</h4>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
+                    <h5 class="menu-list-item-title">Humita</h5>
+                    <h4 class="menu-price">4 €</h4>
+                  </div>
+                </div>
+                <div class="menu-list-item">
+                  <div class="d-flex align-items-center">
+                    <h5 class="menu-list-item-title">Empanada de verde</h5>
+                    <h4 class="menu-price">4 €</h4>
+                  </div>
+                  <p class="small mt-0">Carne o queso</p>
+                </div>
+                <div class="menu-list-item">
+                  <div class="d-flex align-items-center">
+                    <h5 class="menu-list-item-title">Bolón de verde</h5>
+                    <h4 class="menu-price">4 €</h4>
+                  </div>
+                </div>
+                <div class="menu-list-item">
+                  <div class="d-flex align-items-center">
+                    <h5 class="menu-list-item-title">Quimbolito</h5>
+                    <h4 class="menu-price">3.60 €</h4>
+                  </div>
+                </div>
+                <div class="menu-list-item">
+                  <div class="d-flex align-items-center">
+                    <h5 class="menu-list-item-title">Bollo de pesacado</h5>
+                    <h4 class="menu-price">7.80 €</h4>
+                  </div>
+                </div>
+                <div class="menu-list-item">
+                  <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Mote con chicharrón</h5>
-                    <h4 class="menu-price">6 €</h4>
+                    <h4 class="menu-price">7.80 €</h4>
                   </div>
                   <p class="small mt-0">Mote cocido, ensalada(curtido) y chicharrón de cerdo</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Patacones con queso</h5>
-                    <h4 class="menu-price">6.50 €</h4>
+                    <h4 class="menu-price">8.40 €</h4>
                   </div>
                   <p class="small mt-0"></p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Empanaditas de maíz</h5>
-                    <h4 class="menu-price">6 €</h4>
+                    <h4 class="menu-price">7.80 €</h4>
                   </div>
                   <p class="small mt-0">Carne/queso (5 unidades)</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Maduro con queso</h5>
-                    <h4 class="menu-price">5.50 €</h4>
+                    <h4 class="menu-price">7.10 €</h4>
                   </div>
                   <p class="small mt-0">Rodajas de plátano maduro con queso fresco</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Papa y pollo</h5>
-                    <h4 class="menu-price">7 €</h4>
+                    <h4 class="menu-price">9 €</h4>
                   </div>
                   <p class="small mt-0">Pollo broaster, patatas fritas y ensalada</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Salchipapa</h5>
-                    <h4 class="menu-price">6 €</h4>
+                    <h4 class="menu-price">7.80 €</h4>
                   </div>
                   <p class="small mt-0">Patatas fritas, salchichas y ensalada</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Choclo con queso</h5>
-                    <h4 class="menu-price">5 €</h4>
+                    <h4 class="menu-price">6.50 €</h4>
                   </div>
                   <p class="small mt-0">Maíz cocido con queso fresco</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Croquetas caseras</h5>
-                    <h4 class="menu-price">8 €</h4>
-                  </div>
-                  <p class="small mt-0">A elegir entre: Jamón y rabo de toro (8 unidades)</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Alitas BBQ</h5>
-                    <h4 class="menu-price">9 €</h4>
+                    <h4 class="menu-price">11.70 €</h4>
                   </div>
                   <p class="small mt-0">Alitas de pollo con nuestra salsa BBQ</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Yuca frita con tiras de pescado</h5>
-                    <h4 class="menu-price">10 €</h4>
-                  </div>
-                  <p class="small mt-0">Con mayonesa de apio</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="divider divider-xl divider-200"></div>
-        </div>
-      </section>
-       <!-- menu 4-->
-       <section class="section section-md bg-transparent">
-        <div class="container">
-          <div class="row row-30">
-              <div class="col-lg-6 text-center menu-foto">
-                  <!-- Owl Carousel-->
-                  <div class="owl-carousel owl-carousel-dots-right" data-owl="{&quot;dots&quot;:true}">
-                      <!-- Quote simple-->
-                      <div class="quote quote-simple">
-                        <div class="quote-text">
-                            <img src="images/cbola.jpg" alt="" width="570" height="404"/>        
-                        </div>
-                      </div>
-                      <div class="quote quote-simple">
-                          <div class="quote-text">
-                              <img src="images/encebollado.jpg" alt="" width="570" height="404"/>        
-                          </div>
-                        </div>
-                          <div class="quote quote-simple">
-                              <div class="quote-text">
-                                  <img src="images/chaulafan.jpg" alt="" width="570" height="404"/>        
-                              </div>
-                            </div>
-                            <div class="quote quote-simple">
-                                <div class="quote-text">
-                                    <img src="images/arrozcamaron.jpg" alt="" width="570" height="404"/>        
-                                </div>
-                              </div>
-                    </div>
-                </div>
-            <div class="col-lg-6">
-              <div class="menu-list pr-3">
-                <h4 class="menu-list-title">Ensaladas, sopas y arroces</h4>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Ensalada Al Carbón</h5>
-                    <h4 class="menu-price">9 €</h4>
-                  </div>
-                  <p class="small mt-0">Mix de lechugas, aguacate, gambas, maíz, cebolla roja y tomate</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Ensalada César</h5>
-                    <h4 class="menu-price">8 €</h4>
-                  </div>
-                  <p class="small mt-0">Lechuga, tiras de pollo, pan frito, queso parmesano y salsa César</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Caldo de bola</h5>
-                    <h4 class="menu-price">10 €</h4>
-                  </div>
-                  <p class="small mt-0">Sopa que contiene bolón de verde relleno de carne de ternera y verduras, yuca, maiz</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Encebollado</h5>
-                    <h4 class="menu-price">11 €</h4>
-                  </div>
-                  <p class="small mt-0">Sopa de bonito, yuca, cebollas y especies</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Encebollado mixto</h5>
                     <h4 class="menu-price">13 €</h4>
                   </div>
-                  <p class="small mt-0">Sopa de bonito y gambas, yuca, cebollas y especies</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Chaulafán</h5>
-                    <h4 class="menu-price">11 €</h4>
-                  </div>
-                  <p class="small mt-0">arroz frito con carne de ternera, cerdo, huevo, verduras y salsa de soja</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">arroz con camarón</h5>
-                    <h4 class="menu-price">11 €</h4>
-                  </div>
-                  <p class="small mt-0">arroz frito con camarón y verduras</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">arroz con pollo</h5>
-                    <h4 class="menu-price">10 €</h4>
-                  </div>
-                  <p class="small mt-0">arroz frito con pollo y verduras</p>
+                  <p class="small mt-0">Con mayonesa de apio</p>
                 </div>
               </div>
             </div>
@@ -527,31 +328,10 @@
             <div class="col-lg-6 text-center menu-foto">
               <!-- Owl Carousel-->
               <div class="owl-carousel owl-carousel-dots-right" data-owl="{&quot;dots&quot;:true}">
-                  <!-- Quote simple-->
-                <div class="quote quote-simple">
-                  <div class="quote-text">
-                      <img src="images/secochivo.jpg" alt="" width="570" height="404"/>        
-                  </div>
-                </div>
-                <div class="quote quote-simple">
-                  <div class="quote-text">
-                      <img src="images/llapingacho.jpg" alt="" width="570" height="404"/>        
-                  </div>
-                </div>
-                <div class="quote quote-simple">
-                    <div class="quote-text">
-                        <img src="images/churrasco.jpg" alt="" width="570" height="404"/>        
-                    </div>
-                </div>
                  <div class="quote quote-simple">
                     <div class="quote-text">
                         <img src="images/bandera.jpg" alt="" width="570" height="404"/>        
                     </div>
-                  </div>
-                  <div class="quote quote-simple">
-                      <div class="quote-text">
-                          <img src="images/guata.jpg" alt="" width="570" height="404"/>        
-                      </div>
                   </div>
                 </div>
             </div>
@@ -560,71 +340,64 @@
                 <h4 class="menu-list-title">Platos tradicionales</h4>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Horando</h5>
-                    <h4 class="menu-price">10 €</h4>
+                    <h5 class="menu-list-item-title">Hornado</h5>
+                    <h4 class="menu-price">13.50 €</h4>
                   </div>
                   <p class="small mt-0">Cerdo al horno, tortilla de papa, mote cocido y ensalada</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Fritada</h5>
-                    <h4 class="menu-price">10 €</h4>
+                    <h4 class="menu-price">13.50 €</h4>
                   </div>
                   <p class="small mt-0">Cerdo frito, tortilla de papa, mote cocido y ensalada</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Guatita</h5>
-                    <h4 class="menu-price">10 €</h4>
+                    <h4 class="menu-price">13 €</h4>
                   </div>
                   <p class="small mt-0">Arroz blanco, callos de ternera guisados con salsa de maní y patata, aguacate y lechuga </p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
-                    <h5 class="menu-list-item-title">Seco de pollo</h5>
-                    <h4 class="menu-price">10 €</h4>
-                  </div>
-                  <p class="small mt-0">Arroz blanco, pollo de corral guisado, aguacate y lechuga</p>
-                </div>
-                <div class="menu-list-item">
-                  <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Seco de carne</h5>
-                    <h4 class="menu-price">10 €</h4>
+                    <h4 class="menu-price">13 €</h4>
                   </div>
                   <p class="small mt-0">Arroz blanco, carne de tenera guisada, aguacate y lechuga</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Seco de chivo</h5>
-                    <h4 class="menu-price">11 €</h4>
+                    <h4 class="menu-price">14.30 €</h4>
                   </div>
                   <p class="small mt-0">Arroz blanco, cordero guisado, patata, aguacate y lechuga</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Churrasco</h5>
-                    <h4 class="menu-price">13 €</h4>
+                    <h4 class="menu-price">16 €</h4>
                   </div>
                   <p class="small mt-0">Arroz blanco, filete te tenerna a la plancha, huevo frito, aguacate, patatas fritas y ensalada</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Menestra</h5>
-                    <h4 class="menu-price">13 €</h4>
+                    <h4 class="menu-price">16.90 €</h4>
                   </div>
                   <p class="small mt-0">Arroz blanco, menestra de frijoles, patacones, filete a plancha(ternera, cerdo o pollo)</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Llapingacho</h5>
-                    <h4 class="menu-price">13 €</h4>
+                    <h4 class="menu-price">16 €</h4>
                   </div>
                   <p class="small mt-0">Filete de ternera, huevos fritos, chorizo, tortilla de papa, aguacate y ensalada</p>
                 </div>
                 <div class="menu-list-item">
                   <div class="d-flex align-items-center">
                     <h5 class="menu-list-item-title">Bandera</h5>
-                    <h4 class="menu-price">13 €</h4>
+                    <h4 class="menu-price">16 €</h4>
                   </div>
                   <p class="small mt-0">Combinación de guatita, ceviche de camarón, seco de carne, aguacate y ensalada </p>
                 </div>
@@ -648,14 +421,9 @@
                     <!-- Quote simple-->
                     <div class="quote quote-simple">
                       <div class="quote-text">
-                          <img src="images/completo.jpg" alt="" width="570" height="404"/>        
+                          <img src="images/compl.jpg" alt="" width="570" height="404"/>        
                       </div>
                     </div>
-                    <div class="quote quote-simple">
-                        <div class="quote-text">
-                            <img src="images/bandera.jpg" alt="" width="570" height="404"/>        
-                        </div>
-                      </div>
                   </div>
               </div>
               <div class="col-lg-6">
@@ -664,70 +432,49 @@
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Tripitas asadas</h5>
-                      <h4 class="menu-price">10 €</h4>
+                      <h4 class="menu-price">13 €</h4>
                     </div>
                     <p class="small mt-0">Tripitas asadas, mote cocido, patata, salsa de maní, ensalada</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Tripitas completa</h5>
-                      <h4 class="menu-price">14 €</h4>
+                      <h4 class="menu-price">17 €</h4>
                     </div>
                     <p class="small mt-0">Tripitas asadas, chuleta de cerdo, pollo asado, mote cocido, patata, salsa de maní, ensalada</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Parrillada completa (4 personas)</h5>
-                      <h4 class="menu-price">40 €</h4>
-                    </div>
-                    <p class="small mt-0">Surtido de carnes al carbón: Entraña, vacío, tira de churrasco, chuleta de cerdo, pollo, chorizo y moricilla. Con guarnición de patatas fritas, ensalda y mayonesa casera</p>
-                  </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">1/2 Parrillada (2 personas)</h5>
-                      <h4 class="menu-price">25 €</h4>
-                    </div>
-                    <p class="small mt-0"></p>
-                  </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Pollo entero</h5>
-                      <h4 class="menu-price">20 €</h4>
+                      <h4 class="menu-price">22 €</h4>
                     </div>
                     <p class="small mt-0">Pollo asado, acompañado de guarnición de patatas fritas, ensalada y mayonesa casera</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">1/2 Pollo</h5>
-                      <h4 class="menu-price">12€</h4>
+                      <h4 class="menu-price">15€</h4>
                     </div>
                     <p class="small mt-0">Arroz blanco, cordero guisado, patata, aguacate y lechuga</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Tira de entraña</h5>
-                      <h4 class="menu-price">16 €</h4>
-                    </div>
-                    <p class="small mt-0">Tira de carne de ternera, acompañado de patatas fritas, ensalada, salsa chimichurri y mayonesa verde</p>
-                  </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Tira de costilla de cerdo</h5>
-                      <h4 class="menu-price">17 €</h4>
+                      <h4 class="menu-price">19.90 €</h4>
                     </div>
                     <p class="small mt-0">Tira de costillas de cerdo, acompañado de patatas fritas y salsa a elegir entre barbacoa o chimichurri</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Hamburguesa Al carbón</h5>
-                      <h4 class="menu-price">9 €</h4>
+                      <h4 class="menu-price">11.70 €</h4>
                     </div>
                     <p class="small mt-0">220 gr de carne de ternera, cebolla caramelizada, beacon, queso, huevo, tomate y lechuga</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Hamburguesa de secreto ibérico</h5>
-                      <h4 class="menu-price">10 €</h4>
+                      <h4 class="menu-price">13 €</h4>
                     </div>
                     <p class="small mt-0">220 gr de carne de cerdo ibérico, cebolla caramelizada, beacon, queso, huevo, tomate y lechuga </p>
                   </div>
@@ -750,11 +497,6 @@
                 <div class="owl-carousel owl-carousel-dots-right" data-owl="{&quot;dots&quot;:true}">
                     <!-- Quote simple-->
                     <div class="quote quote-simple">
-                      <div class="quote-text">
-                          <img src="images/cevi3.jpg" alt="" width="570" height="404"/>        
-                      </div>
-                    </div>
-                    <div class="quote quote-simple">
                         <div class="quote-text">
                             <img src="images/cev.jpg" alt="" width="570" height="404"/>        
                         </div>
@@ -767,42 +509,42 @@
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Ceviche de camarón</h5>
-                      <h4 class="menu-price">12 €</h4>
+                      <h4 class="menu-price">15.60 €</h4>
                     </div>
                     <p class="small mt-0">Ceviche tradicional ecuatoriano, gambas, cebollas, tomate, limón...</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Ceviche de pesacado</h5>
-                      <h4 class="menu-price">11 €</h4>
+                      <h4 class="menu-price">14.30 €</h4>
                     </div>
                     <p class="small mt-0">Pezcado blanco en trozos, leche de tigre (picante), limón, cilantro y otras especies</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Ceviche Mixto</h5>
-                      <h4 class="menu-price">15 €</h4>
+                      <h4 class="menu-price">17 €</h4>
                     </div>
                     <p class="small mt-0">Una combinación de civiche de camarón y pescado</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Dorada frita</h5>
-                      <h4 class="menu-price">13 €</h4>
+                      <h4 class="menu-price">17 €</h4>
                     </div>
                     <p class="small mt-0">Dorada frita, arroz blanco, patacones y ensalada</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Corvina frita</h5>
-                      <h4 class="menu-price">13 €</h4>
+                      <h4 class="menu-price">16.90 €</h4>
                     </div>
                     <p class="small mt-0">Corvina rebozada, arroz blanco, patacones, salsa rosa</p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
                       <h5 class="menu-list-item-title">Camarones reventados</h5>
-                      <h4 class="menu-price">12€</h4>
+                      <h4 class="menu-price">15.60€</h4>
                     </div>
                     <p class="small mt-0">Camarones rebozados, arroz blanco, patacones, salsa rosa</p>
                   </div>
@@ -816,6 +558,47 @@
             <div class="divider divider-xl divider-200"></div>
           </div>
         </section>
+        <!-- menu  -->
+       <section class="section section-md bg-transparent">
+          <div class="container">
+            <div class="row row-30">
+              <div class="col-lg-6 text-center menu-foto">
+                <!-- Owl Carousel-->
+                <div class="owl-carousel owl-carousel-dots-right" data-owl="{&quot;dots&quot;:true}">
+                    <!-- Quote simple-->
+                    <div class="quote quote-simple">
+                        <div class="quote-text">
+                            <img src="images/tarta.jpeg" alt="" width="570" height="404"/>        
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="menu-list pr-3">
+                  <h4 class="menu-list-title">Postres</h4>
+                  <div class="menu-list-item">
+                    <div class="d-flex align-items-center">
+                      <h5 class="menu-list-item-title">Higos con queso</h5>
+                      <h4 class="menu-price">7 €</h4>
+                    </div>
+                  </div>
+                  <div class="menu-list-item">
+                    <div class="d-flex align-items-center">
+                      <h5 class="menu-list-item-title">Tarta tres leches</h5>
+                      <h4 class="menu-price">7 €</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="divider divider-xl divider-200"></div>
+          </div>
+        </section>
+
         <!-- menu 8 -->
        <section class="section section-md bg-transparent">
           <div class="container">
@@ -826,79 +609,39 @@
                     <!-- Quote simple-->
                     <div class="quote quote-simple">
                       <div class="quote-text">
-                          <img src="images/canelazo.jpg" alt="" width="570" height="404"/>        
+                          <img src="images/bebida.jpeg" alt="" width="570" height="404"/>        
                       </div>
                     </div>
-                    <div class="quote quote-simple">
-                        <div class="quote-text">
-                            <img src="images/canelazo.jpg" alt="" width="570" height="404"/>        
-                        </div>
-                      </div>
                   </div>
               </div>
               <div class="col-lg-6">
                 <div class="menu-list pr-3">
-                  <h4 class="menu-list-title">Bebidas</h4>
+                  <h4 class="menu-list-title">Nuestro bar</h4>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Pilsener</h5>
-                      <h4 class="menu-price">3 €</h4>
+                      <h5 class="menu-list-item-title">Corona 1/3</h5>
+                      <h4 class="menu-price">3.50 €</h4>
                     </div>
                     <p class="small mt-0"></p>
                   </div>
                   <div class="menu-list-item">
                     <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Mahu</h5>
-                      <h4 class="menu-price">2,50 €</h4>
-                    </div>
-                    <p class="small mt-0"></p>
-                  </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Coronita</h5>
-                      <h4 class="menu-price">3 €</h4>
-                    </div>
-                    <p class="small mt-0"></p>
-                  </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Doble de cerveza</h5>
-                      <h4 class="menu-price">2,80 € €</h4>
-                    </div>
-                    <p class="small mt-0"></p>
-                  </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Copa de vino (Rioja, Rivera del Duero, Rueda)</h5>
-                      <h4 class="menu-price">2,50 €</h4>
+                      <h5 class="menu-list-item-title">Mahu (Bote 33cl)</h5>
+                      <h4 class="menu-price">2.80 €</h4>
                     </div>
                     <p class="small mt-0"></p>
                   </div>
                   <div class="menu-list-item">
                       <div class="d-flex align-items-center">
-                        <h5 class="menu-list-item-title">Sangría</h5>
-                        <h4 class="menu-price">10 €</h4>
+                        <h5 class="menu-list-item-title">Refrescos (Bote 33cl)</h5>
+                        <h4 class="menu-price">2.60€</h4>
                       </div>
-                      <p class="small mt-0"></p>
-                    </div>
-                  <div class="menu-list-item">
-                    <div class="d-flex align-items-center">
-                      <h5 class="menu-list-item-title">Tinto de verano</h5>
-                      <h4 class="menu-price">3 €</h4>
-                    </div>
-                    <p class="small mt-0"></p>
-                  </div>
-                  <div class="menu-list-item">
-                      <div class="d-flex align-items-center">
-                        <h5 class="menu-list-item-title">Refrescos</h5>
-                        <h4 class="menu-price">2,50€</h4>
-                      </div>
-                      <p class="small mt-0"></p>
+                      <p class="small mt-0">Coca cola, fanta, nestea, acuarius</p>
                     </div>
                     <div class="menu-list-item">
                         <div class="d-flex align-items-center">
                           <h5 class="menu-list-item-title">Tripical/Manzana (1/2 litro)</h5>
-                          <h4 class="menu-price">2,50 €</h4>
+                          <h4 class="menu-price">2.80 €</h4>
                         </div>
                         <p class="small mt-0"></p>
                       </div>
@@ -909,146 +652,16 @@
                           </div>
                           <p class="small mt-0"></p>
                         </div>
-                        <div class="menu-list-item">
-                            <div class="d-flex align-items-center">
-                              <h5 class="menu-list-item-title">Zumos</h5>
-                              <h4 class="menu-price">3 €</h4>
-                            </div>
-                            <p class="small mt-0">Mora, maracuya, naranjilla, guanábana, mango, tomate de árbol </p>
-                          </div>
-                          <div class="menu-list-item">
-                              <div class="d-flex align-items-center">
-                                <h5 class="menu-list-item-title">Batidos</h5>
-                                <h4 class="menu-price">4 €</h4>
-                              </div>
-                              <p class="small mt-0">Mora, maracuya, naranjilla, guanábana, mango, tomate de árbol </p>
-                            </div>
-                            <div class="menu-list-item">
-                                <div class="d-flex align-items-center">
-                                  <h5 class="menu-list-item-title">Quaker</h5>
-                                  <h4 class="menu-price">3 €</h4>
-                                </div>
-                                <p class="small mt-0"></p>
-                              </div>
-                              <div class="menu-list-item">
-                                  <div class="d-flex align-items-center">
-                                    <h5 class="menu-list-item-title">Limonada</h5>
-                                    <h4 class="menu-price">3 €</h4>
-                                  </div>
-                                  <p class="small mt-0">Limonada casera</p>
-                                </div>
-                                <div class="menu-list-item">
-                                    <div class="d-flex align-items-center">
-                                      <h5 class="menu-list-item-title">Zumo de naranja natural</h5>
-                                      <h4 class="menu-price">3 €</h4>
-                                    </div>
-                                    <p class="small mt-0"></p>
-                                  </div>
-                                  <div class="menu-list-item">
-                                      <div class="d-flex align-items-center">
-                                        <h5 class="menu-list-item-title">Cafes, Infusiones</h5>
-                                        <h4 class="menu-price">1,40 €</h4>
-                                      </div>
-                                      <p class="small mt-0"></p>
-                                    </div>
-                                    <div class="menu-list-item">
-                                        <div class="d-flex align-items-center">
-                                          <h5 class="menu-list-item-title">Mojitos</h5>
-                                          <h4 class="menu-price">6 €</h4>
-                                        </div>
-                                        <p class="small mt-0">Maracuya, naranjilla, clásico</p>
-                                      </div>
-                                      <div class="menu-list-item">
-                                          <div class="d-flex align-items-center">
-                                            <h5 class="menu-list-item-title">Combinados</h5>
-                                            <h4 class="menu-price">6 €</h4>
-                                          </div>
-                                          <p class="small mt-0">Whisky, Ginebra, Ron, etc..</p>
-                                        </div>
                 </div>
               </div>
             </div>
-            <span class="text-warning text-capitalize font-weight-normal font-cursive" style="color: #b90809 !important">* Precios sujetos a variación. Por favor, consulte en el restaurante.</span>
-
           </div>
         </section>
         <section class="section">
           <div class="container">
             <div class="divider divider-xl divider-200"></div>
           </div>
-        </section>
-      <!-- Footer event-->
-      <footer class="section footer footer-default bg-transparent novi-background" data-preset='{"title":"Footer Minimal","category":"footer","reload":true,"id":"footer-minimal"}'>
-        <div class="footer-default-top">
-          <div class="container">
-            <div class="row row-30 justify-content-lg-between">
-              <div class="col-md-3 text-center text-md-left">
-                      <!-- Logo-->
-                      <div class="logo"><a class="logo-link" href="index.html"><img class="logo-image-default" src="images/logo-default-240.png" alt="Al Carbón" width="163" height="82"/><img class="logo-image-inverse" src="images/logo-default-240.png" alt="Al Carbón" width="163" height="82"/></a></div>
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 text-center text-sm-left">
-                <ul class="list-footer">
-                  <li class="list-item">Marcelo Usera Nº 46,<br>Madrid, 28041</li>
-                </ul>
-              </div>
-              <div class="col-6 col-sm-4 col-md-2 text-center text-sm-left">
-                <ul class="list-footer">
-                 <!-- <li class="list-item"><a class="list-link" href="about-us.html">About us</a></li>
-                  <li class="list-item"><a class="list-link" href="services.html">Services</a></li>-->
-                  <li class="list-item"><a class="list-link" href="contacts.html">Contacto</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-sm-4 col-lg-4 text-center text-sm-left">
-                <ul class="list-footer">
-                  <li class="list-item"><a class="list-link" href="mailto:info@restaurantealcarbon.es">info@restaurantealcarbon.es</a></li>
-                  <li class="list-item"><a class="list-link" href="tel:910725010">+910725010</a></li>
-                </ul>
-                <div class="icon-social-list group-10 d-flex justify-content-center justify-content-sm-start"><a class="icon icon-circle icon-secondary fa-facebook novi-icon" href="https://www.facebook.com/alcarbonusera" target="_blank"></a><a class="icon icon-circle icon-secondary fa-instagram novi-icon" href="#"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="divider divider-xl divider-200"></div>
-        </div>
-        <div class="footer-default-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 text-center text-md-left">
-                      <!-- Copyright-->
-                      <p class="rights"><span>&copy; 2020&nbsp;</span><span>Al Carbón Restaurante</span><span>. Todos los derechos reservados.&nbsp;</span><a class="rights-link" href="privacy-policy.html">Política de privacidad</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- Modal-->
-      <div class="modal fade" id="modal" tabindex="-1" role="dialog"> 
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content context-dark bg-primary">
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-close-circle" aria-hidden="true"></span></button>
-            <div class="section-md text-center">
-              <div class="row row-30 justify-content-center">
-                <div class="col-11 col-lg-9">
-                  <h3 class="text-warning">Llamanos</h3>
-                </div>
-                <div class="col-11 col-lg-9">
-                  <h4>Join our Newsletter list to get all the latest offers and discounts</h4>
-                </div>
-                <div class="col-11 col-lg-8">
-                  <form class="rd-mailform form-inline justify-content-center novi-disabled" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="components/rd-mailform/rd-mailform.php">
-                    <div class="form-inline-group">
-                      <input class="form-control" type="email" name="email" placeholder="Enter your email" data-constraints="@Email @Required">
-                    </div>
-                    <button class="btn btn-secondary" type="submit">Llamanos</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </section>      
     </div>
-    <div class="form-output snackbar snackbar-dark" id="form-output-global"> </div>
   </body>
 </html>
